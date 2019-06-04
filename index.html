@@ -28,9 +28,35 @@
 </div>
 
 <div class = "container">
-	<form id= "searchParameters">
-		<input type="search" data-search="" id="search" value="Search">
-	  	<button  type="button" class="btn btn-info" id="submit" disabled>Go</button>
+	<form id= "searchParameters">	  	
+		  <div class="form-group">
+		    <label for="search">Search Term:</label>
+		    <input type="search" data-search="" class="form-control" id="search" placeholder="Search">
+		  </div>
+		  <div class="form-group">
+		    <label for="search">Number of Records to Retrieve:</label>
+		     <select class="form-control" id="record">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="search">Start Year(Optional):</label>
+		    <input type="search" data-search="" class="form-control" id="startYear" placeholder="Search">
+		  </div>
+		  <div class="form-group">
+		    <label for="search">End Year:</label>
+		    <input type="search" data-search="" class="form-control" id="endYear" placeholder="Search">
+		  </div>
+
+		  </div>
+		  <div class="form-group">
+		     <button  type="button" class="btn btn-info justify-content-center" id="submit">Go</button>
+		  </div>
+		 
 	</form>
 
 	<div id="topArticles">
