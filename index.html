@@ -21,21 +21,24 @@
 </head>
 <body>
 
-<ul class="nav justify-content-between py-1 px-3">
-	<li class="nav-item">
-	  	<input type="search" data-search="" id="search" value="Search">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">New York Times</h5>
+  </div>
+</div>
+
+<div class = "container">
+	<form id= "searchParameters">
+		<input type="search" data-search="" id="search" value="Search">
 	  	<button  type="button" class="btn btn-info" id="submit" disabled>Go</button>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="#" id="nyt">The New York Times</a>
-  </li>
+	</form>
 
-  <li class="nav-item">
-  	<button  type="button" class="btn btn-info" id="login" disabled>Login</button>
-  	<button  type="button" class="btn btn-info" id="go" disabled>Go</button>
-  </li>
+	<div id="topArticles">
 
-</ul>
+	</div>
+</div>
+
+
 
 
 <script src="script.js"></script>
