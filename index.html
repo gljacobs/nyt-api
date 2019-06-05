@@ -21,69 +21,76 @@
 </head>
 <body>
 
-<!-- <div class="card ju" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">New York Times</h5>
-  </div>
-</div> -->
+	<div class = "container-fluid ">
+		<nav class="navbar navbar-light justify-content-center rounded-sm px-5 py-3" style="; background-color: #092447;">
+		 	<a class="navbar-brand" id = "nyt" href="#">
+		   		<img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> 
+		  		 New York Times Search
+		 	</a>
+		</nav>
+	</div>
 
-<div class = "container-fluid ">
-	<nav class="navbar navbar-light justify-content-center rounded-sm" style="padding:40px 0px; background-color: #092447;">
-	 	<a class="navbar-brand" id = "nyt" href="#">
-	   		<img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> 
-	  		 New York Times Search
-	 	</a>
-	</nav>
-</div>
+	<div class = "container border px-0 rounded-lg" id = "searchDiv">
+		
+		<nav class="nav bg-light mx-0">
+		  <a class="nav-link disabled font-weight-bold" href="#" tabindex="-1" aria-disabled="true" id="searchTitle">Search Parameters</a>
+		</nav> 
 
-<div class = "container border px-0 rounded-lg" id = "searchDiv">
-	
-			<nav class="nav bg-light mx-0">
-			  <a class="nav-link disabled font-weight-bold" href="#" tabindex="-1" aria-disabled="true">Search Parameters</a>
-			</nav> 
+		<form id= "form" class = "mx-4 mb-3">				 	
+		  <div class="form-group">
+		    <label for="search">Search Term:</label>
+		    <input type="search" data-search="" class="form-control form-control-sm" id="search" placeholder="Search">
+		  </div>
+		  <div class="form-group">
+		    <label for="search">Number of Records to Retrieve:</label>
+		     <select class="form-control form-control-sm" id="record">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="search">Start Year(Optional):</label>
+		    <input type="search" data-search="" class="form-control form-control-sm" id="startYear" placeholder="Search">
+		  </div>
+		  <div class="form-group">
+		    <label for="search">End Year(Optional):</label>
+		    <input type="search" data-search="" class="form-control form-control-sm" id="endYear" placeholder="Search">
+		  </div>
 
-				<form id= "form" class = "mx-4 my-3">				 	
-				  <div class="form-group">
-				    <label for="search">Search Term:</label>
-				    <input type="search" data-search="" class="form-control" id="search" placeholder="Search">
-				  </div>
-				  <div class="form-group">
-				    <label for="search">Number of Records to Retrieve:</label>
-				     <select class="form-control" id="record">
-				      <option>1</option>
-				      <option>2</option>
-				      <option>3</option>
-				      <option>4</option>
-				      <option>5</option>
-				    </select>
-				  </div>
-				  <div class="form-group">
-				    <label for="search">Start Year(Optional):</label>
-				    <input type="search" data-search="" class="form-control" id="startYear" placeholder="Search">
-				  </div>
-				  <div class="form-group">
-				    <label for="search">End Year(Optional):</label>
-				    <input type="search" data-search="" class="form-control" id="endYear" placeholder="Search">
-				  </div>
-
-				  <div class = "form-inline ">
-					  <button class="btn btn-light my-2 mt-2 ml-1 btn-sm" type="submit" id="submit">Search</button>	 
-					  <button  class="btn btn-light my-2 my-sm-0 ml-2 btn-sm" type="button" id="clear">Clear Result</button>
-					</div>
-				</form>
-
-</div>
-
-<div class = "container border px-0 mt-5 rounded-lg" id = "articleDiv" >
-
-			<nav class="nav bg-light" >
-			  <a class="nav-link disabled font-weight-bold" href="#" tabindex="-1" aria-disabled="true">Top Articles</a>
-			</nav> 
-			<div id = "topArticles" class = "mx-4 my-3">
-
+		  <div class = "form-inline ">
+			  <button class="btn btn-light my-1 mt-2 ml-1 btn-sm" type="submit" id="submit">Search</button>	 
+			  <button  class="btn btn-light my-1 mt-2 ml-2 btn-sm" type="button" id="clear">Clear Result</button>
 			</div>
+		</form>
 
-</div>
+	</div>
+
+	<div class = "container border px-0 mt-5 rounded-lg" id = "articleDiv" >
+
+		<nav class="nav bg-light" id="articleTitle">
+		  <a class="nav-link disabled font-weight-bold" href="#" tabindex="-1" aria-disabled="true">Top Articles</a>
+		</nav> 
+		<div id = "topArticles" class = "mx-4 my-3">
+		</div>
+
+	</div>
+
+
+	
+		
+	<footer class = "footer mt-auto pt-4 pb-2">
+		<div class = "container px-0" id="footer">
+			<hr>
+			Made with lots and lots of ♥️
+		</div>
+	</footer>
+	
+	
+	
+
 
 
 
