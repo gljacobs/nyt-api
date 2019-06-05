@@ -1,0 +1,60 @@
+
+
+#nyt
+{
+	color: white;
+	font-weight: bold;
+	font-family: 'Old London';
+	font-size: 40px;
+}
+
+#searchDiv
+{
+	margin-top: 50px;
+}
+
+#searchTitle, #articleTitle
+{
+	font-family: 'Imperial-700';
+}
+
+#form
+{
+	font-size: 14px;
+	font-family: 'Imperial';
+	margin-top: 35px;
+}
+
+
+#submit
+{
+	margin-left: 100px;
+}
+
+footer
+{
+	text-align: center;
+	font-family: 'Imperial';
+	font-size: 12px;
+	bottom: 0;
+	padding-bottom: 5px;
+	position: ;
+}
+
+
+
+@font-face {
+  font-family: 'Old London';
+  src: URL('OldLondon.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Imperial';
+  src: URL('imperial-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Imperial-700';
+  src: URL('imperial-700.ttf') format('truetype');
+}
+
