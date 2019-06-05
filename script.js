@@ -1,5 +1,7 @@
 function displayNews() {
-  var search = $("#search").val;
+  var search = $("#search")
+    .val()
+    .trim();
   var queryURL =
     "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" +
     search +
@@ -8,8 +10,9 @@ function displayNews() {
     url: queryURL,
     method: "GET"
   }).then(function(response) {
-    var results = response.data;
-    console.log(results);
+    // var results = response.data;
+    console.log(response);
+    console.log(search);
   });
 }
-$(document).on("click", "#submit", displayNews);
+$("#submit").on("click", displayNews);
